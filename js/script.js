@@ -1,6 +1,6 @@
 
     // Functions
-    function buildQuiz(){
+    function startQuiz(){
       // variable to store the HTML output
       const output = [];
       let score = 0
@@ -91,45 +91,63 @@
     const submitButton = document.getElementById('submit');
     const myQuestions = [
       {
-        question: "Who invented JavaScript?",
+        question: "What is OOP?",
         answers: {
-          a: "Douglas Crockford",
-          b: "Sheryl Sandberg",
-          c: "Brendan Eich"
+          a: "Ore Omo Praise",
+          b: "Object Orbits Physics",
+          c: "Object Oriented Programming"
         },
         correctAnswer: "c"
       },
       {
-        question: "Which one of these is a JavaScript package manager?",
+        question: "Does God exist?",
         answers: {
-          a: "Node.js",
-          b: "TypeScript",
-          c: "npm"
+          a: "Very Controversial",
+          b: "Yes",
+          c: "No"
+        },
+        correctAnswer: "a"
+      },
+      {
+        question: "Python is a web-only programming language?",
+        answers: {
+          a: "Yes",
+          b: "No",
+          c: "You can't really say"
+        },
+        correctAnswer: "b"
+      },
+      
+      {
+        question: "The map method in the python language is for?",
+        answers: {
+          a: "Creatinf a map of the continents",
+          b: "Creating a map of your program",
+          c: "Creating a same-size list of your argument list after been acted upon by your argument function"
         },
         correctAnswer: "c"
       },
       {
         question: "Which tool can you use to ensure code quality?",
         answers: {
-          a: "Angular",
-          b: "jQuery",
+          a: "VS Code",
+          b: "PyCharm",
           c: "RequireJS",
-          d: "ESLint"
+          d: "PEP8"
         },
         correctAnswer: "d"
       }
     ];
   
     // Kick things off
-    buildQuiz();
+    startQuiz();
   
-    // Pagination
     const previousButton = document.getElementById("previous");
     const nextButton = document.getElementById("next");
     const slides = document.querySelectorAll(".slide");
     const answ = document.getElementsByClassName("")
     let currentSlide = 0;
-    // Show the first slide
+
     showSlide(currentSlide);
   
     // Event listeners
